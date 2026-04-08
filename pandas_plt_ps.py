@@ -44,7 +44,5 @@ plt.ylabel("Crisis")
 plt.scatter(df["social_media_hours_daily"], df["youth_mh_crisis_score"],
             s=100, alpha = 0.5, color='red')
 
-x,y = np.polyfit(df["social_media_hours_daily"], df["youth_mh_crisis_score"], 1)
-plt.plot(df["social_media_hours_daily"], x*df["youth_mh_crisis_score"]+y, color='blue')
 plt.grid(True, linestyle = '--', linewidth = 0.5)
 plt.show()
